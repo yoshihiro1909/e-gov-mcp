@@ -19,14 +19,18 @@ class PromptLoader:
     by keeping prompt templates separate from the main application logic.
     """
 
-    def __init__(self, prompts_dir: str = "prompts"):
+    def __init__(self, prompts_dir: str = None):
         """
         Initialize the PromptLoader.
 
         Args:
-            prompts_dir: Directory containing prompt files (default: "prompts")
+            prompts_dir: Directory containing prompt files (default: auto-detect relative to package)
         """
-        self.prompts_dir = Path(prompts_dir)
+        if prompts_dir is None:
+            # Auto-detect: prompts/ is sibling to src/ in the package
+            self.prompts_dir = Path(__file__).parent.parent / "prompts"
+        else:
+            self.prompts_dir = Path(prompts_dir)
         self._cache: dict[str, str] = {}
 
         # Ensure prompts directory exists
