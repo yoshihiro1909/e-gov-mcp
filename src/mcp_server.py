@@ -385,7 +385,7 @@ class ConfigLoader:
                         LAW_CONFIG_PATH or defaults to config/laws.yaml
         """
         # Windows-compatible path handling
-        default_config = Path("config") / "laws.yaml"
+        default_config = Path(__file__).parent.parent / "config" / "laws.yaml"
         config_env = os.environ.get("LAW_CONFIG_PATH")
         if config_env:
             self.config_path = Path(config_env)
