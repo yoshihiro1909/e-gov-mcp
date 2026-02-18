@@ -141,7 +141,7 @@ e-gov-mcp/
 
 ## 謝辞
 
-- [ryoooo/e-gov-law-mcp](https://github.com/ryoooo/e-gov-law-mcp) — 本プロジェクトの原型
+- [ryoooo/e-gov-law-mcp](https://github.com/ryoooo/e-gov-law-mcp) — Based on
 - [e-Gov 法令API](https://laws.e-gov.go.jp/apidoc/)
 - [FastMCP](https://github.com/jlowin/fastmcp)
 
