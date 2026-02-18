@@ -1,16 +1,9 @@
 #!/usr/bin/env python3
 """
-e-Gov Law MCP Server v2 - Ultra Smart & Efficient
+e-gov-mcp — 日本法令 MCP Server
 
-A highly optimized Model Context Protocol server for Japanese e-Gov Law API.
-Drastically simplified from 1000+ lines to <500 lines while adding more functionality.
-
-Key Improvements:
-- Direct mapping for 16+ major laws (六法 + key legislation)
-- Smart Base64/XML text extraction
-- Efficient article search with intelligent pattern matching
-- Minimal API calls with maximum accuracy
-- Clean, maintainable code architecture
+e-Gov法令APIを利用して法令の検索・条文取得・参照解析を行うMCPサーバー。
+23ツール対応（条文検索、参照チェーン追跡、全文検索、構造解析、附則・定義等）。
 """
 
 import argparse
